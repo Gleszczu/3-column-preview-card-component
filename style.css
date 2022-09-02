@@ -1,0 +1,117 @@
+*{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);/*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons) */
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-light-gray);
+}
+main {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 80%;
+    max-width: 900px;
+}
+.contrainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 40px;
+    color: var(--very-light-gray);
+    min-width: 200px;
+}
+.contrainer-left{
+    background-color: var(--bright-orange);
+}
+.contrainer-middle{
+    background-color: var(--dark-cyan);
+}
+.contrainer-right{
+    background-color: var(--very-dark-cyan);
+}
+.icon {
+    width: 60px;
+}
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.description, button {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+button {
+    cursor: pointer;
+    border-radius: 20px;
+    height: 40px;
+    background-color: var(--very-light-gray);
+    border-style: none;
+}
+button:hover {
+    background-color: transparent;
+    border: solid var(--very-light-gray);
+    color: var(--very-light-gray);
+
+}
+.btn-left {
+    color: var(--bright-orange);
+}
+.btn-middle {
+    color: var(--dark-cyan);
+}
+.btn-right {
+    color: var(--very-dark-cyan);
+}
+footer {
+    margin-top: 1%;
+}
+@media screen and (max-width: 600px){
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+        margin: 20px;
+    }
+    .contrainers{
+        height: 400px;
+        max-width: 380px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 375px){
+    body {
+        height: 100%;
+        display: flex;
+    }
+    main {
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 20px;
+    }
+    .contrainers{
+        height: 400px;
+}
+}
